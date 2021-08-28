@@ -101,7 +101,7 @@ img {
 
 @media only screen and (max-width: 500px) {
   .previous, .next,.text {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .text span{
