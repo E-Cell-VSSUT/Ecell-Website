@@ -51,7 +51,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #eaeeeb;
     padding: 0px;
-    width: 500px;
+    width: 540px;
     align-items: flex-end;
     float: right;
     height: 550px;
@@ -65,41 +65,27 @@ input[type=submit]:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 1em;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(10px, auto);
 }
 
 .nested>div {
     border: white 1px solid;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-    padding-top: 30px;
 }
 
-.social_media_links {
-    padding: 95px;
-    margin: 5px 4px;
-    text-align: center;
-}
 
 .fa {
-    padding-top: 2px;
+    padding-top: 45px;
     text-align: center;
-    /* font-size: 270px;   */
-    width: 35px;
-    height: 70px;
+    
+    width: 38px;
+    height: 20px;
     border-radius: 50%;
 }
 
-.fa:hover {
-    background-color: rgb(19, 1, 26);
-    cursor: pointer;
-    opacity: 0.9;
-}
 
-.fa fa-map-marker {
-    padding-top: 5px;
-}
+
 
 a {
     color: white;
@@ -108,3 +94,34 @@ a {
 a:hover {
     color: rgb(243, 55, 127);
 }
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:100%;
+    position:relative;
+    height:10px;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .container {
+      width: 80%;
+      padding: 0;
+    }
+    .wrapper {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .container, .wrapper, .nested ,.fa {
+      width: 100%;
+    }
+  }
